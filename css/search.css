@@ -1,0 +1,43 @@
+#search {
+    margin-top: 3mm;
+    display: flex;
+}
+
+#category {
+    border-radius: 2mm;
+    border: 0.1mm solid #999;
+}
+
+.search-box {
+    width: 100%;
+    border-radius: 2mm;
+    border: 0.1mm solid #999;
+    margin: 0 0.5mm;
+    padding-left: 2mm;
+    font-size: 4.8mm;
+}
+
+.search-btn {
+    width: 75px;
+}
+
+.date-addon {
+    margin-top: 1mm;
+    font-size: 4mm;
+}
+
+.date-select {
+    display: none;
+}
+
+.date-input {
+    border: 0.1mm solid #999;
+    margin: 0 0.5mm;
+    padding-left: 3mm;
+    font-size: 4.4mm;
+    font-family: sans-serif;
+}
+
+.date-select label {
+    font-size: 4mm;
+}

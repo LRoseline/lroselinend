@@ -1,0 +1,184 @@
+.detail-frame {
+    width: auto;
+}
+
+.detail-cell {
+    display: flex;
+    padding: 1mm;
+    border-left: 0.6mm solid gray;
+}
+
+.detail-category {
+    white-space: none;
+    width: 6em;
+    border-right: 0.5mm solid slategray;
+    text-align: right;
+    padding: 2mm;
+}
+
+.detail-text {
+    margin-left: 0.5mm;
+    padding: 2mm;
+    border-left: 0.35mm solid lightslategray;
+    width: 100%;
+}
+
+.detail-button {
+    margin-top: 2mm;
+}
+
+/* Center */
+.space {
+    width: calc(100% - 8em - 4em);
+    background: silver;
+}
+
+/* Left Area */
+.detail-left-category {
+    white-space: none;
+    width: 4em;
+    border-right: 0.5mm solid slategray;
+    text-align: right;
+    padding: 2mm;
+}
+
+.detail-left-text {
+    margin-left: 0.5mm;
+    padding: 2mm;
+    border-left: 0.35mm solid lightslategray;
+}
+
+/* Right Position */
+.detail-right-category {
+    white-space: none;
+    width: 4em;
+    border-left: 0.5mm solid slategray;
+    padding: 2mm;
+}
+
+.detail-right-text {
+    margin-right: 0.5mm;
+    padding: 2mm;
+    border-right: 0.35mm solid lightslategray;
+    text-align: right;
+    overflow: visible;
+}
+
+.epost {
+    margin-top: 6mm;
+    margin-bottom: 5mm;
+}
+
+.epost-loading {
+    text-align: center;
+}
+
+.epost-service {
+    margin-top: 1cm;
+    text-align: right;
+    font-size: 4mm;
+}
+
+.epost-btn {
+    margin-top: 3mm;
+}
+
+.epost-service > a, .epost-service > a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.epost-service > a:hover {
+    text-decoration: none;
+    color: darkgray;
+}
+
+.loading-circle {
+    margin: auto;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.4cm;
+
+    border: 6px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#fff, #fff), 
+    repeating-conic-gradient(#00000000 0%,  orange 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .loading-circle {
+      animation: loading-circle-spin infinite 1.2s linear;
+    }
+}
+
+@keyframes loading-circle-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 1.18em;
+    font-weight: 600;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0.4em;
+}
+
+.td-cen {
+    text-align: center;
+}
+
+.td-post-num {
+    width: 120px;
+}
+
+.td-post-detail {
+    width: 1.5cm;
+}
+
+.status-ceil > tr:hover {
+    background-color: #88778844;
+}
+
+.td-post-name {
+    width: 1.5cm;
+}
+
+.td-post-status {
+    width: 4cm;
+}
+
+.td-post-desc {
+    width: 2.5cm;
+    text-align: right;
+}
+
+.copy-window {
+    margin-top: -5mm;
+    font-size: 3.6mm;
+    text-align: right;
+}
+
+.code-copy {
+    border-radius: 2mm;
+    border: 0.2mm solid #000D;
+    padding: 1mm 2mm;
+    font-size: 4mm;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+
+}

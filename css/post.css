@@ -1,0 +1,114 @@
+.date-layout {
+    margin-top: 7.5mm;
+    margin-bottom: 1mm;
+}
+
+.date-layout > span {
+    font-size: 4.5mm;
+}
+
+.show-cal > span {
+    font-size: 4.5mm;
+    margin-left: 0.75cm;
+}
+
+.post-cell {
+    display: flex;
+    vertical-align: middle;
+}
+
+#postselect {
+    width: 30mm;
+    font-size: 4.5mm;
+    height: 10mm;
+    padding: 2mm;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.box {
+    width: 100%;
+    font-size: 4.5mm;
+    height: 10mm;
+    display: block;
+    padding: 2mm;
+}
+
+.address-input {
+    display: flex;
+}
+
+label {
+    font-size: 4mm;
+}
+
+.dot {
+    height: 0.001em;
+    width: 0.001em;
+    background-color: #00000055;
+    border-radius: 50%;
+    display: block;
+    padding: 0.8mm;
+    margin: 15px 1.4px;
+}
+
+.memobox {
+    width: 100%;
+    font-size: 4.5mm;
+    display: block;
+    padding: 2mm;
+    height: 5cm;
+    margin-top: 1mm;
+    margin-bottom: -6mm;
+    font-family: sans-serif;
+    resize: none;
+}
+
+.show-cal {
+    display: none;
+}
+
+.button-box {
+    margin-top: 4mm;
+}
+
+.date-box {
+    width:max-content;
+    font-family: sans-serif;
+    font-size: 4mm;
+    padding: 0.4mm;
+    margin-top: 1mm;
+}
+
+.message-csv {
+    margin: auto;
+    width: 98%;
+    padding: 2%;
+    border: 2px solid chartreuse;
+}
+
+.message-negative {
+    margin: auto;
+    width: 98%;
+    padding: 2%;
+    border: 2px solid tomato;
+}
+
+@media screen and (max-width: 1024px) {
+    .postcodes {
+        width: 80%;
+        font-size: 5mm;
+        padding: 1mm;
+        margin: 1mm;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .address-input {
+        display: block;
+    }
+
+    .space {
+        display: none;
+    }
+}

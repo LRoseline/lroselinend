@@ -1,0 +1,78 @@
+/* Table Header */
+.table-header {
+    padding: 1mm;
+    margin-top: -4mm;
+    width: 100%;
+}
+
+/* Main Area */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* Table Head Area */
+
+th {
+    font-size: 1.18em;
+    font-weight: 600;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0.4em;
+}
+
+/* Table Body Area */
+
+td {
+    font-size: 1.08em;
+    padding: 0.6em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+td > a, td > a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+tbody > tr:hover {
+    background-color: #dee2e6;
+    color: #333;
+    font-weight: bolder;
+}
+
+/* ETC */
+
+.post-type {
+    width: 78px;
+    text-align: center;
+}
+
+.post-sender {
+    width: 58px;
+    text-align: center;
+}
+
+.post-ship {
+    width: 110px;
+    text-align: center;
+}
+
+.post-date {
+    border-right: 1px solid #dee2e6;
+}
+
+.mail-checkable {
+    border-left: 6px solid greenyellow;
+}
+
+.mail-waiting {
+    border-left: 6px solid orange;
+}
+
+.mail-standard {
+    border-left: 6px solid skyblue;
+}
