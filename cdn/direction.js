@@ -8,15 +8,6 @@ function hrefTab(url) {
     window.open(url);
 }
 
-function frameChange(target, url) {
-    var css = obj(".tar2");
-    var getCSS = getComputedStyle(css);
-    var isDisplaySide = getCSS.getPropertyValue("display");
-    console.log(isDisplaySide);
-
-    obj(target).src = url;
-}
-
 function popup(url, width, height) {
     window.open(url,'Open Window','width='+width+',height='+height+',resizable=no');
 }
