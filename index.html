@@ -1,8 +1,102 @@
 <html lang="ko" xmlns="https://www.w3.org/1999/xhtml">
     <head>
         <title>T'Friends Framework Center</title>
+       	<style>
+            body {
+                background-color: #00000000;
+            }
+
+            .numshadow {
+                color: #FFF;
+                text-shadow: 2px 2px 10px #000;
+            }
+
+            .clock {
+                position: fixed;
+                top: -1.6%;
+                right: -3%;
+                padding: 0.5%;
+                /* background-color: #000;
+                border: 4px solid #FFF; */
+                border-radius: 30px;
+                width: 14%;
+                text-align: center;
+                height: 12.5%;
+                vertical-align: middle;
+            }
+    	</style>
     </head>
     <body>
-        <h1>Hello, world!</h1>
+        <div class="clock"></div>
+        <script>
+            const clock = document.querySelector(".clock");
+
+            function setClock() {
+                let today = new Date();
+                let nowHour = today.getHours();
+                
+                // APM
+                if (nowHour > 12) {
+                    var nowPAM = "오후";
+                }
+                else
+                {
+                    var nowPAM = "오전";
+                }
+                
+                // Hours
+                if (nowHour >= 22) {
+                    var nowHours = (nowHour - 12);
+                }
+                else if(nowHour > 12)
+                {
+                    var nowHours = "0" + (nowHour - 12);
+                }
+                else if(nowHour >= 10)
+                {
+                    var nowHours = (nowHour);
+                }
+                else
+                {
+                    var nowHours = "0" + (nowHour);
+                }
+                
+                // Minutes
+                let nowMin = today.getMinutes();
+                let nowMins;
+                
+                if (nowMin < 10) {
+                    nowMins = "0" + today.getMinutes();
+                }
+                else
+                {
+                    nowMins = today.getMinutes();
+                }
+                
+                // Seconds
+                let nowSec = today.getSeconds();
+                let nowSecs;
+                
+                if (nowSec < 10) {
+                    nowSecs = "0" + today.getSeconds();
+                }
+                else
+                {
+                    nowSecs = today.getSeconds();
+                }
+
+                var column;
+                if (nowSec % 2 == 1) {
+                    column = "<span class='numshadow'>:</span>"
+                } else {
+                    column = "<span style='color: #00000000;'>:</span>";
+                }
+                
+                clock.innerHTML = "<span class='numshadow'>"+nowHours+"</span>"+column+"<span class='numshadow'>"+nowMins+"</span>";
+                
+                setTimeout('setClock()', 100);
+            }
+            setClock();
+        </script>
     </body>
 </html>
